@@ -1,0 +1,386 @@
+.header-component-header {
+  width: 100%;
+  border-bottom: 5px solid rgb(239, 136, 63);
+  position: relative;
+  margin: auto;
+  z-index: 15;
+  background: black;
+  color: white;
+  height: 220px;
+}
+.header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+.logo-top {
+  position: absolute;
+  left: 35px;
+}
+
+.logo {
+  width: 21%;
+}
+
+.header-description {
+  width: 100%;
+}
+@media (max-width: 1379px) {
+  .logo-top {
+    left: -6px;
+    position: absolute;
+    width: 26%;
+  }
+}
+@media (max-width: 995px) {
+  .header-description {
+    display: none;
+  }
+}
+
+.header-component-social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.header-links {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  left: 22%;
+  width: 65%;
+}
+
+.social-media-path {
+  margin: 10px 10px;
+  font-size: 25px;
+  color: rgb(67, 67, 67);
+}
+
+.social-media-path:hover {
+  transition: 0.1s ease-in-out;
+  color: rgb(239, 136, 63);
+  cursor: pointer;
+}
+
+.links-to-components {
+  display: flex;
+  border-top: rgb(239, 136, 63) 2px solid;
+  margin: 20px 0;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+
+  /* position: fixed;
+  z-index: 15;
+  width: 70%;
+  background: white; */
+}
+
+.header-component-login-button {
+  margin: 0px 12px;
+  outline: none;
+}
+
+.header-component-recipe-button {
+  margin: 0 12px;
+  outline: none;
+}
+
+.header-component-profile-button {
+  margin: 0 12px;
+  outline: none;
+}
+
+.header-component-singleRecipe-button {
+  margin: 0 12px;
+  outline: none;
+}
+
+.header-component-mulitRecipe-button {
+  margin: 0 12px;
+  outline: none;
+}
+
+.header-component-home-button {
+  margin: 0 12px;
+  outline: none;
+}
+
+.lg {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.lg:hover {
+  transition: 0.1s ease-in-out;
+  color: rgb(239, 136, 63);
+  text-decoration: underline;
+  outline: none;
+}
+
+.imageCarousel {
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 800px; */
+  width: 80%;
+}
+
+.imageOfCarousel img {
+  /* height: 800px; */
+}
+
+/* .stickyLogo {
+  width: 100px;
+}
+
+.underNavbar {
+  z-index: 10;
+  position: fixed;
+  background: rgb(239, 136, 63);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+} */
+
+.lg-u {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.lg-u-u {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-top: 5px;
+  color: black;
+}
+
+.lg-u:hover,
+.lg-u-u:hover {
+  transition: 0.1s ease-in-out;
+  color: white;
+  text-decoration: underline;
+}
+.allUserHeader {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 13px;
+}
+.usernameHeader {
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+  margin: 18px 10px;
+  font-size: 25px;
+}
+.header-component-sign-out-button {
+  background: white;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  font-size: 1em;
+  color: #ef883f;
+  cursor: pointer;
+  outline: none;
+  transition: ease-in-out 0.2s;
+  height: 30px;
+  margin: 1px 10px;
+}
+.headerSticky {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-component-sign-out-button:hover {
+  background: #ef883f;
+  color: black;
+}
+.searchbar-container {
+  background: white;
+  color: white;
+}
+.search-text-field {
+  background: none;
+  border: 2px solid #ef883f;
+  color: white;
+}
+
+/* IPAD PRO VIEW */
+@media (max-width: 1024px) {
+  .header-component-decription {
+    display: none;
+  }
+  .header-description {
+    display: none;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .links-to-components {
+    display: flex;
+    border-top: none;
+    justify-content: center;
+  }
+  .header-component-header {
+    height: 150px;
+  }
+  .header-links {
+    margin-top: 0px;
+  }
+
+  .logo-top {
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+
+    padding: 0;
+  }
+}
+
+/* IPAD VIEW */
+@media (max-width: 770px) {
+  .header-component-decription {
+    display: none;
+  }
+  .header-description {
+    display: none;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .links-to-components {
+    display: flex;
+
+    justify-content: center;
+  }
+  .header-component-header {
+    height: 150px;
+  }
+  .header-links {
+    margin-top: 0px;
+  }
+
+  .logo-top {
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+
+    padding: 0;
+  }
+}
+
+/* IPHONE PLUS VIEW */
+@media (max-width: 420px) {
+  .header-component-decription {
+    display: none;
+  }
+  .header-description {
+    display: none;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .links-to-components {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-component-header {
+    height: 300px;
+  }
+  .header-links {
+    margin-top: 0px;
+  }
+
+  .logo-top {
+    margin-top: 120px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+
+    padding: 0;
+  }
+}
+/*IPHONE X VIEW */
+@media (max-width: 376px) {
+  .header-component-decription {
+    display: none;
+  }
+  .header-description {
+    display: none;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .links-to-components {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-component-header {
+    height: 300px;
+  }
+  .header-links {
+    margin-top: 0px;
+  }
+
+  .logo-top {
+    margin-top: 80px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+
+    padding: 0;
+  }
+}
+/* IPHONE 5/SE */
+@media (max-width: 320px) {
+  .header-description {
+    display: none;
+  }
+  .header-search-bar {
+    display: none;
+  }
+  .links-to-components {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header-component-header {
+    height: 300px;
+  }
+  .header-links {
+    margin-top: 0px;
+  }
+  .usernameHeader {
+    display: none;
+  }
+  .logo-top {
+    margin-top: 80px;
+    margin-left: 20px;
+    height: 50px;
+    width: 100px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,126 @@
+.multi-recipe-view-page-container {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  background: black;
+}
+
+.multi-view-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+#single-card {
+  border: 1px solid white;
+  position: relative;
+}
+.multi-recipe-view-page-title {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+/* IPAD PRO VIEW */
+@media (max-width: 1024px) {
+  .multi-recipe-view-page-container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 975px) {
+  .multi-view-grid {
+    display: grid;
+    padding: 10px 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+  .multi-recipe-view-page-container {
+    height: 100%;
+  }
+}
+/* IPAD VIEW */
+@media (max-width: 768px) {
+  .multi-recipe-view-page-container {
+    height: 100%;
+  }
+  .multi-view-grid {
+    display: grid;
+    padding: 10px 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+}
+
+/* PIXEL 2 VIEW */
+@media (max-width: 415px) {
+  .multi-recipe-view-page-container {
+    height: 100%;
+  }
+  .multi-view-grid {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+}
+
+/* IPHONE X VIEW */
+@media (max-width: 375px) {
+  .multi-recipe-view-page-container {
+    height: 100%;
+  }
+  .multi-view-grid {
+    display: grid;
+    padding: 10px 25px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+}
+
+/* IPHONE 5/SE VIEW */
+@media (max-width: 320px) {
+  .multi-recipe-view-page-container {
+    height: 100%;
+  }
+  .multi-view-grid {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+}
+.card-subtitle {
+  text-align: center;
+}
+
+.card-body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card-body .row {
+  display: inline;
+  margin: 0;
+}
+
+.card-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mulit-single-card {
+  border: 1px solid white;
+  /* margin: 10px 0 10px 0; */
+}
+
+.pageNumbers {
+  color: white;
+  background: rgb(116, 113, 112);
+}

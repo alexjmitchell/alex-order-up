@@ -1,0 +1,320 @@
+.profile-page-container {
+  width: 100vw;
+  /* height: 100vh; */
+  background: black;
+  color: white;
+  display: grid;
+  padding: 40px;
+}
+
+.profile-page-to-home-button {
+  width: 100px;
+}
+
+.userProfileMakeUp {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.MakeUpUserName {
+  line-height: 30px;
+  display: flex;
+  align-items: baseline;
+}
+.MakeUpUsername {
+  text-align: center;
+  width: 100px;
+  margin: auto;
+}
+.MakeUpCaret {
+  color: rgb(239, 136, 63);
+  font-size: 20px;
+  margin: 0px 10px;
+}
+.MakeUpMeal {
+  background: rgb(239, 136, 63);
+  font-size: 20px;
+  margin: 0px 50px;
+}
+.MakeUpUserName p:first-child {
+  font-size: 30px;
+}
+.aboutusertext {
+  font-size: 25px;
+}
+.MakeUpPic img {
+  width: 300px;
+}
+
+.view-all-recipes,
+.view-all-recipes-private {
+  flex-grow: 1;
+  overflow: scroll;
+  height: 500px;
+  text-align: center;
+  width: 20%;
+}
+
+.view-all-recipe-title {
+  color: white;
+  text-decoration: none;
+  margin-top: 25px;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+.view-all-recipe-image {
+  width: 100%;
+  height: 5vw;
+  object-fit: cover;
+}
+.view-all-recipes {
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.2s ease-in-out;
+  margin-top: 25px;
+  width: 25%;
+}
+.dont-show-all-recipes {
+  height: 0px;
+  display: none;
+}
+.view-all-recipes-private {
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.2s ease-in-out;
+  margin-top: 25px;
+  width: 25%;
+}
+.dont-show-all-recipes-private {
+  height: 0px;
+  display: none;
+}
+.full-favs-privates {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.favorited {
+  width: 100%;
+}
+.private {
+  width: 100%;
+}
+.MakeUpExtras {
+  width: 100%;
+}
+.view .editProfileButton {
+  width: 100px;
+  height: 50px;
+  background: white;
+  color: rgb(239, 136, 63);
+}
+.toggleButton {
+  outline: none;
+  color: white !important;
+  background: #ef883f;
+  margin: 10px 45px 0 0;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 10px;
+  z-index: 20;
+  height: auto;
+  transition: ease-in-out 0.5s;
+}
+.toggleButton:hover {
+  color: black !important;
+  outline: orange;
+}
+
+#color {
+  background: rgb(239, 136, 63);
+  color: black;
+}
+#nocolor {
+  background: white;
+  color: black;
+}
+
+.editProfileButton {
+  margin-top: 25px;
+  font-size: 15px;
+  color: white;
+  background: none;
+}
+
+/* Edit Profile Form */
+
+.userFormContainer {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  color: white;
+}
+.profileInput {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0 15px 0;
+}
+.profileInputTextarea {
+  width: 100%;
+}
+.userProfile {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  margin-top: 24px;
+}
+.userUpdateMain {
+  width: 20%;
+  margin: auto;
+}
+.submitEdit {
+  width: 50%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+/* IPAD PRO VIEW */
+@media (max-width: 1024px) {
+  .submitEdit {
+    color: black;
+    background: white;
+  }
+  .userUpdateMain {
+    width: 70%;
+  }
+  .createTitle {
+    text-align: center;
+    font-size: 21px;
+  }
+  .userProfile {
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(239, 136, 63);
+  }
+  .userFormContainer {
+    height: 74.5vh;
+  }
+}
+/* IPAD VIEW */
+@media (max-width: 768px) {
+  .userUpdateMain {
+    width: 70%;
+  }
+  .createTitle {
+    text-align: center;
+    font-size: 21px;
+  }
+  .userProfile {
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(239, 136, 63);
+  }
+  .userFormContainer {
+    height: 66vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .view-all-recipe-image {
+    display: none;
+  }
+  .view-all-recipe-title {
+    width: 100vw;
+    cursor: pointer;
+  }
+
+  .view-all-recipe-title:hover {
+    color: lightsalmon;
+  }
+
+  .view-all-recipes,
+  .view-all-recipes-private {
+    flex-grow: 1;
+    overflow: auto;
+    height: auto;
+    width: 100vw;
+    text-align: start;
+  }
+}
+
+/* IPHONE 6/7 */
+@media (max-width: 415px) {
+  .userUpdateMain {
+    width: 70%;
+  }
+  .createTitle {
+    text-align: center;
+    font-size: 21px;
+  }
+  .userProfile {
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(239, 136, 63);
+  }
+  .userFormContainer {
+    height: 80vh;
+  }
+}
+
+/* IPHONE X */
+@media (max-width: 375px) {
+  .userUpdateMain {
+    width: 70%;
+  }
+  .createTitle {
+    text-align: center;
+    font-size: 21px;
+  }
+  .userProfile {
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(239, 136, 63);
+  }
+  .userFormContainer {
+    height: 85vh;
+  }
+}
+
+/* IPHONE 5/SE */
+@media (max-width: 375px) {
+  .userUpdateMain {
+    width: 70%;
+  }
+  .createTitle {
+    text-align: center;
+    font-size: 21px;
+  }
+  .userProfile {
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(239, 136, 63);
+  }
+  .userFormContainer {
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .favorited {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: auto;
+  }
+  .view-all-recipes,
+  .view-all-recipes-private {
+    margin: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .profile-page-container {
+    height: 100vh;
+  }
+  .favorited {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}

@@ -1,0 +1,144 @@
+.recipe-grid-container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+#main-card-home {
+  width: 400px;
+  background: black;
+}
+
+#order-up-banner-shown {
+  width: 200px;
+  margin: 10px 0;
+}
+.order-up-banner {
+  width: 500px;
+  margin: 10px 0;
+}
+
+@media (max-width: 1620px) {
+  .recipe-grid-container {
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+  }
+
+  #main-card-home {
+    width: 350px;
+  }
+
+  #card-img-top {
+    width: 350px;
+    height: 275px;
+  }
+  .order-up-banner {
+    width: 400px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .recipe-grid-container {
+    display: grid;
+    padding: 10px 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    border-top: 5px solid rgb(255, 151, 77);
+  }
+
+  #main-card-home {
+    width: 300px;
+  }
+
+  #card-img-top {
+    width: 300px;
+    height: 250px;
+  }
+
+  .order-up-banner {
+    display: none;
+  }
+
+  .order-up-banner {
+    background-image: url("../../Assets/2.png");
+    height: 100px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .recipe-grid-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .recipe-grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  #main-card-home {
+    width: 300px;
+  }
+
+  #card-img-top {
+    width: 300px;
+    height: 250px;
+  }
+
+  #order-up-banner-shown {
+    display: none;
+  }
+
+  .order-up-banner {
+    background-image: url("../../Assets/2.png");
+    height: 100px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .recipe-grid-flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.recipe-grid-flex {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+.home-page-single-recipe {
+  position: relative;
+}
+.heart-home-page {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+  height: 25px;
+  z-index: 10;
+  font-size: 16px;
+}
+.home-heart {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 21px;
+}
+.home-heart:hover {
+  border: none;
+  transition: 0.2s ease-in-out;
+  color: red;
+}

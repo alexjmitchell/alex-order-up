@@ -1,0 +1,100 @@
+.log-reg-container {
+  background: black;
+  padding: 25px;
+  height: 68vh;
+}
+
+.formpage {
+  width: 100%;
+}
+.formback {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  height: 360px;
+  flex-direction: column;
+  color: white;
+}
+.formbackReg {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  height: 400px;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+}
+.user,
+.pass {
+  margin: 15px;
+  height: 45px;
+  text-align: center;
+  font-size: 25px;
+  outline: none;
+}
+.sub {
+  height: 45px;
+  margin: 15px;
+
+  cursor: pointer;
+  font-size: 20px;
+}
+.textLogin {
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+  margin: 0;
+}
+.newuser {
+  widows: 100%;
+  margin: auto;
+  display: flex;
+}
+.areyou {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.clickhere {
+  cursor: pointer;
+  height: 25px;
+  color: black;
+  border: 2px solid #ef883f;
+}
+.click {
+  color: black;
+}
+
+@media (max-width: 1025px) {
+  .form {
+    width: 60%;
+  }
+  .formback {
+    width: 60%;
+  }
+  /* REGISTRATION FORM */
+  .formbackReg {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .formback {
+    width: 100%;
+  }
+  .form {
+    width: 90%;
+  }
+  .formbackReg {
+    width: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "recipebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:client": "cd client && yarn start",
+    "start:server": "cd server && yarn start",
+    "start": "concurrently \"yarn run start:server\" \"yarn run start:client\"",
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PC-Fullstack-Fall-2019/boilerplate/issues"
+  },
+  "homepage": "https://github.com/PC-Fullstack-Fall-2019/boilerplate#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "@material-ui/lab": "^4.0.0-alpha.36",
+    "@okta/okta-react": "^1.2.3",
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-react": "^2.5.4",
+    "aws-sdk": "^2.583.0",
+    "axios": "^0.19.0",
+    "cloudinary-react": "^1.2.1",
+    "concurrently": "^5.0.0",
+    "config": "^3.2.4",
+    "dynamodb": "^1.2.1",
+    "emailjs-com": "^2.4.1",
+    "express-jwt": "^5.3.1",
+    "js-sha512": "^0.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.13",
+    "mysql": "^2.17.1",
+    "node": "^13.5.0",
+    "node-sass": "^4.13.0",
+    "rc-steps": "^3.5.0",
+    "react": "^16.12.0",
+    "react-awesome-button": "^6.3.1",
+    "react-awesome-slider": "^2.2.1",
+    "react-grid-gallery": "^0.5.5",
+    "react-scripts": "^3.2.0",
+    "react-select": "^3.0.8",
+    "react-share": "^3.0.1",
+    "react-switch": "^5.0.1",
+    "react-to-print": "^2.5.0",
+    "script-tags": "^0.1.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1",
+    "uuid": "^3.3.3"
+  },
+  "boilerplate": {
+    "name": "boilerplate",
+    "version": "1.0.0",
+    "description": "",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/PC-Fullstack-Fall-2019/boilerplate.git"
+    },
+    "author": "",
+    "license": "ISC"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

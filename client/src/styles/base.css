@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  /* , "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.back-arrow-to-homepage {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+button {
+  outline: none !important;
+}
+
+.item {
+  z-index: 10;
+}
+
+@media print {
+  /* All your print styles go here */
+  #footer,
+  #nav {
+    display: none !important;
+  }
+}
+
